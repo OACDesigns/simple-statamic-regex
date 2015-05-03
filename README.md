@@ -1,5 +1,5 @@
-# simple-statamic-regex
-A simple variable modifier for Statamic to strip out certain characters using regex.
+# Simple Statamic Strip and Replace (with Regex)
+A simple variable modifier for Statamic to strip out or replace certain characters using regex.
 
 ##Installation
 Create a folder called `strip` in your `_add-ons` folder, and copy `mod.strip.php` into it.
@@ -24,6 +24,11 @@ Strip out spaces
 Strip out spaces and carriage returns (line breaks)
 
     {{ value|strip:SPACE|strip:NL }}
+
+
+Replace spaces with underscores
+
+    {{ value|strip:SPACE:_ }}
     
 
 ##NOTES
